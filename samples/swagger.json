@@ -1,0 +1,44 @@
+{
+  "openapi": "3.0.0",
+
+  "info": {
+    "title": "Billing API",
+    "version": "1.0"
+  },
+
+  "paths": {
+
+    "/invoice": {
+
+      "post": {
+
+        "summary": "Create invoice",
+
+        "requestBody": {
+
+          "content": {
+
+            "application/json": {
+
+              "schema": {
+
+                "type": "object",
+
+                "properties": {
+
+                  "customer_id": {
+                    "type": "string"
+                  },
+
+                  "amount": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
